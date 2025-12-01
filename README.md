@@ -30,3 +30,21 @@ Run the command **"Process glossary links"**, and the plugin will:
 1. **Obsidian** v0.15.0 or higher
 2. **Ollama** installed and running locally ([download here](https://ollama.ai))
 3. At least one Ollama model downloaded (e.g., `ollama pull gemma2:9b`)
+
+
+
+### Basic workflow
+
+1. **Mark terms** in your notes using the special syntax:
+   ```markdown
+   [[¤JavaScript]]
+   ```
+
+2. **Run the command** (Ctrl/Cmd+P):
+   - Type "Process glossary links"
+   - Or set a custom hotkey in **Settings → Hotkeys**
+
+3. **Review the results**:
+   - New glossary notes are created in the `Glossary` folder
+   - The markup is replaced with standard wiki links
+   - Definitions are cached for future use
