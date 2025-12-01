@@ -48,3 +48,29 @@ Run the command **"Process glossary links"**, and the plugin will:
    - New glossary notes are created in the `Glossary` folder
    - The markup is replaced with standard wiki links
    - Definitions are cached for future use
+
+**After processing:**
+```markdown
+I need to understand [[recursion]] and [[memoization]] for my algorithms course.
+```
+
+**Generated notes:**
+- `Glossary/recursion.md` - Contains AI-generated definition
+- `Glossary/memoization.md` - Contains AI-generated definition
+
+## Configuration
+
+Open **Settings → AI Glossary Helper** to customize:
+
+### Ollama model
+Choose which model generates definitions (default: `gemma2:9b`)
+
+**Recommended models:**
+- `gemma2:9b` - Fast, good quality (2.5 GB)
+- `llama2` - Reliable, well-tested (3.8 GB)
+- `mistral` - Fast and capable (4.1 GB)
+- `phi` - Very fast, smaller model (1.6 GB)
+
+Make sure to download your chosen model first:
+```bash
+ollama pull gemma2:9b
