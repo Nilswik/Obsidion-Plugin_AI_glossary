@@ -1,0 +1,10 @@
+{
+"id": "ai-glossary-helper",
+"name": "AI Glossary Helper",
+"version": "1.0.0",
+"minAppVersion": "1.6.0",
+"description": "Automatically creates glossary notes from [[¤WORD]] using Ollama.",
+"author": "Your Name",
+"authorUrl": "",
+"isDesktopOnly": true
+}
